@@ -1,0 +1,26 @@
+[{
+    "category": "root",
+    "data": [
+        {
+            "name": "開発",
+            "description": "desc1",
+            "refs": "develop"
+        },
+        {
+            "name": "運用",
+            "description": "desc2",
+            "refs": ""
+        },
+        {
+            "name": "CI/CD",
+            "description": "desc3",
+            "refs": ""
+        },
+        {
+            "name": "テスト",
+            "description": "desc4",
+            "refs": "test"
+        }
+    
+    ]
+}]

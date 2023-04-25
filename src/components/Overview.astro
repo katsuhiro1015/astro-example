@@ -1,0 +1,27 @@
+---
+import Card from '../components/Card.astro';
+
+export interface Props {
+	category: any;
+}
+
+const { category } = Astro.props;
+
+---
+<ul role="list" class="link-card-grid">
+    { category[0].data.map((data: any) => 
+        <Card
+            title={data.name}
+            body={data.description}
+            refs={data.refs}
+        />
+    ) }
+</ul>
+<style>
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
